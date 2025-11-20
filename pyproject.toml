@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rldiff2cad"
+version = "0.1.0"
+authors = [{name = "RlDIFF2CAD Contributors"}]
+description = "Sequence-driven CAD sketch generator with diffusion and PPO refinement"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+rldiff2cad = "rldiff2cad.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
